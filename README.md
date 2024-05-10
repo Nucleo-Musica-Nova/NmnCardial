@@ -15,5 +15,8 @@ Partimos de uma abordagem da síntese sonora que explora a ordenação de fluxos
   <img width="50%" src="https://github.com/nucleomusicanova/Patches/assets/31707161/69ed598e-6159-4bfc-a809-928d2d769d0a">
 </p>
 
-<p align="center">https://nucleomusicanova.github.io/Patches/pernilongo-v1/</p>
+<p align="center">
+  <a target="_blank" href="https://nucleomusicanova.github.io/Patches/pernilongo-v1/" align="center">Acesse o Patch</a>
+</p>
+
 
