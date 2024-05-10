@@ -1,7 +1,5 @@
 # Set of Patches
 
-## Max/MSP
-
 ## PureData
 
 ## VCV Rack 
