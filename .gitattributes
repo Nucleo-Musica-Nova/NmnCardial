@@ -1,2 +1,0 @@
-pernilongo-v1/CardinalNative.data filter=lfs diff=lfs merge=lfs -text
-pernilongo-v1/CardinalNative.wasm filter=lfs diff=lfs merge=lfs -text
