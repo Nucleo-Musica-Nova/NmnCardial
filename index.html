@@ -1,53 +1,67 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <title>Patches NMN</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Begin Jekyll SEO tag v2.8.0 -->
-    <title>
-      Patches | Curate a selection of online patches intended for educational
-      purposes.
-    </title>
-    <meta name="generator" content="Jekyll v3.9.5" />
     <meta property="og:title" content="Patches" />
-    <meta property="og:locale" content="en_US" />
-    <meta
-      name="description"
-      content="Curate a selection of online patches intended for educational purposes."
-    />
-    <meta
-      property="og:description"
-      content="Curate a selection of online patches intended for educational purposes."
+    <meta property="og:locale" content="pt_BR" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
     />
     <link rel="canonical" href="https://nucleomusicanova.github.io/Patches/" />
-    <meta
-      property="og:url"
-      content="https://nucleomusicanova.github.io/Patches/"
-    />
-    <meta property="og:site_name" content="Patches" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Patches" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "description": "Curate a selection of online patches intended for educational purposes.",
-        "headline": "Patches",
-        "name": "Patches",
-        "url": "https://nucleomusicanova.github.io/Patches/"
-      }
-    </script>
-
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      <h1 align="center">Patches (Título provisório)</h1>
+    <h1 align="center" style="margin-bottom: 3%; margin-top: 3%">
+      Núcleo Música Nova - Patches
+    </h1>
 
-      <p style="text-align: center">
+    <div class="container">
+      <div class="card">
+        <div>
+          <h3 class="card-title">Pernilongo</h3>
+          <p class="card-text">
+            Pernilongo parte de uma abordagem da síntese sonora que explora a
+            ordenação de fluxos de sinal como o próprio espaço criativo.
+          </p>
+        </div>
+        <img src="./assets/images/pernilongo.png" class="card-img" />
+      </div>
+
+      <div class="card">
+        <div>
+          <h3 class="card-title">Textura de Noise</h3>
+          <p class="card-text">
+            Nesse patch sugerimos o trabalho com alteração texturas graduais e
+            lentas.
+          </p>
+        </div>
+        <img src="./assets/images/noise.png" class="card-img" />
+      </div>
+
+      <div class="card">
+        <div style="display: flex; flex-direction: column">
+          <h3 class="card-title">Partch</h3>
+          <p class="card-text">
+            Este patch explora estruturas microtonais através de arpejos,
+            texturas e ritmos. É baseado na ideia de forma-processo.
+          </p>
+        </div>
+        <img
+          src="./assets/images/partch.png"
+          class="card-img"
+          onclick="window.open('./partch', '_blank')"
+          style="cursor: pointer"
+        />
+      </div>
+    </div>
+
+    <div>
+      <p>
         O conjunto de patches proposto constitui um recurso didático destinado a
         facilitar a compreensão de conceitos musicais por parte de
         compositores(as) iniciantes no uso de sintetizadores modulares ou
@@ -57,74 +71,28 @@
         de patches apresentados trabalhamos com o VCV Rack através do Cardinal
         (uma versão online) assim como o PureData e uma versão online.
       </p>
-
       <h2 align="center">VCV Rack Patches</h2>
-
       <p>
         VCV Rack é uma emulação de sintetizadores modulares, que funciona como
         na vida real, onde patches são feitos adicionando módulos e
         conectando-os com patch cords. É gratuito e de código aberto, permitindo
         que as pessoas desenvolvam novos módulos.
       </p>
-
-      <h3 align="center">Pernilongo</h3>
-
-      <p>
-        Descrição...
-      </p>
-
-      <p align="center">
-        <img width="50%" src="./assets/images/pernilongo.webp" />
-      </p>
-
-      <p align="center">
-        <a
-          target="_blank"
-          href="https://nucleomusicanova.github.io/Patches/pernilongo/"
-          align="center"
-          >Acesse o Patch</a
-        >
-      </p>
-
-      <h3 align="center">Noise Texture</h3>
-
-      <p>
-        Descrição...
-      </p>
-
-      <p align="center">
-        <img width="50%" src="./assets/images/pernilongo.webp" />
-      </p>
-
-      <p align="center">
-        <a
-          target="_blank"
-          href="https://nucleomusicanova.github.io/Patches/pernilongo-v1/"
-          align="center"
-          >Acesse o Patch</a
-        >
-      </p>
-
-
-
-      <h3 align="center">Alturas Microtonais</h3>
-
-      <p>
-        Descrição...
-      </p>
-
-      <p align="center">
-        <img width="50%" src="./assets/images/microtonal-texture.webp" />
-      </p>
-
-      <p align="center">
-        <a
-          target="_blank"
-          href="https://nucleomusicanova.github.io/Patches/microtonal-pitches/"
-          align="center"
-          >Acesse o Patch</a
-        >
-      </p>
     </div>
   </body>
+  <footer>
+    <br />
+    <img
+      src="./partch/NucleoMusicaNova_preto.png"
+      style="vertical-align: middle; width: 30px"
+    />
+    <p id="footer-year" style="text-align: center; margin-top: 0">
+      &copy; 2024-<span id="current-year"></span> - Núcleo Música Nova.
+    </p>
+  </footer>
+  <script>
+    var currentYearElement = document.getElementById("current-year");
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+  </script>
 </html>
