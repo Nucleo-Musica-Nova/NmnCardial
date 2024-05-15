@@ -5,12 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Cardinal" />
     <meta name="theme-color" content="#111111" />
+    <favicon href="favicon.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
       user-scalable="no"
     />
-    <title>Cardinal</title>
+    <title>Partch</title>
     <style>
       html {
         background-color: #111111;
@@ -119,20 +120,24 @@
       id="nmn-logo"
       style="margin-top: 50px; margin-bottom: 40px"
       class="emscripten"
-      src="./NucleoMusicaNova_preto.png"
+      src="../assets/images/NucleoMusicaNova_preto.png"
     />
     <div class="emscripten" id="status">Downloading...</div>
     <div class="emscripten">
       <progress value="0" max="100" id="progress" hidden="1"></progress>
     </div>
 
-    <div id="canvas_wrapper"> 
-   <input type="file" id="canvas_file_open" ></input> 
-       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas> 
-     </div> 
+    <div id="canvas_wrapper">
+      <input type="file" id="canvas_file_open" />
+      <canvas
+        class="emscripten"
+        id="canvas"
+        oncontextmenu="event.preventDefault()"
+        tabindex="-1"
+      ></canvas>
+    </div>
 
     <script type="text/javascript">
-
       var wasmErrors = [];
       var errorElement = document.getElementById("error");
       var statusElement = document.getElementById("status");

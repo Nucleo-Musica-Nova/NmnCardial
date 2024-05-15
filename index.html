@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Patches" />
     <meta property="og:locale" content="pt_BR" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -17,7 +21,7 @@
   </head>
   <body>
     <h1 align="center" style="margin-bottom: 3%; margin-top: 3%">
-      Núcleo Música Nova - Patches
+      Patches | Ebook Arte Sonora
     </h1>
 
     <div class="container">
@@ -29,7 +33,18 @@
             ordenação de fluxos de sinal como o próprio espaço criativo.
           </p>
         </div>
-        <img src="./assets/images/pernilongo.png" class="card-img" />
+        <img
+          src="./assets/images/pernilongo.png"
+          class="card-img"
+          onclick="window.open('./noise', '_blank')"
+          style="cursor: pointer"
+        />
+        <h4 class="card-details" style="text-align: center">
+          <a href="pernilongo/detalhes.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Veja Detalhes</a
+          >
+        </h4>
       </div>
 
       <div class="card">
@@ -40,15 +55,27 @@
             lentas.
           </p>
         </div>
-        <img src="./assets/images/noise.png" class="card-img" />
+        <img
+          src="./assets/images/noise.png"
+          class="card-img"
+          onclick="window.open('./noise', '_blank')"
+          style="cursor: pointer"
+        />
+        <h4 class="card-details" style="text-align: center">
+          <a href="noise/detalhes.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Veja Detalhes</a
+          >
+        </h4>
       </div>
 
       <div class="card">
         <div style="display: flex; flex-direction: column">
           <h3 class="card-title">Partch</h3>
           <p class="card-text">
-            Este patch explora estruturas microtonais através de arpejos,
-            texturas e ritmos. É baseado na ideia de forma-processo.
+            Explora estruturas microtonais através de arpejos, texturas e
+            ritmos. É baseado na ideia de alterações graduais entre diferentes
+            momentos (forma-processo).
           </p>
         </div>
         <img
@@ -57,26 +84,31 @@
           onclick="window.open('./partch', '_blank')"
           style="cursor: pointer"
         />
+        <h4 class="card-details" style="text-align: center">
+          <a href="partch/detalhes.html">
+            <i class="fa-solid fa-circle-info"></i>
+            Veja Detalhes</a
+          >
+        </h4>
       </div>
     </div>
+    <hr />
 
     <div>
-      <p>
-        O conjunto de patches proposto constitui um recurso didático destinado a
-        facilitar a compreensão de conceitos musicais por parte de
-        compositores(as) iniciantes no uso de sintetizadores modulares ou
-        programação visual. A intenção é oferecer ideias composicionais mais ou
-        menos prontas, destacando as capacidades dessas ferramentas, as quais
-        podem ser obscurecidas por configurações iniciais. Por isso, o conjunto
-        de patches apresentados trabalhamos com o VCV Rack através do Cardinal
-        (uma versão online) assim como o PureData e uma versão online.
-      </p>
       <h2 align="center">VCV Rack Patches</h2>
       <p>
-        VCV Rack é uma emulação de sintetizadores modulares, que funciona como
-        na vida real, onde patches são feitos adicionando módulos e
-        conectando-os com patch cords. É gratuito e de código aberto, permitindo
-        que as pessoas desenvolvam novos módulos.
+        Os patches propostos são recursos didáticos para ajudar compositores(as)
+        iniciantes a entender conceitos musicais ao usar sintetizadores
+        modulares. Oferecemos algumas ideias composicionais prontas, de modo a
+        fornecer uma experência de aprendizado prática.
+      </p>
+      <p>
+        VCV Rack (Cardinal) é uma emulação de sintetizadores modulares, que
+        funciona como na vida real, onde patches são feitos adicionando módulos
+        e conectando-os com patch cords. É gratuito e de código aberto,
+        permitindo que as pessoas desenvolvam novos módulos. Para executar os
+        patches em Browsers utilizamos o Cardinal, uma cópia modificada no VCV
+        Rack (desenvolvido, entre outros, por Filipe Coelho).
       </p>
     </div>
   </body>
@@ -86,8 +118,11 @@
       src="./partch/NucleoMusicaNova_preto.png"
       style="vertical-align: middle; width: 30px"
     />
-    <p id="footer-year" style="text-align: center; margin-top: 0">
-      &copy; 2024-<span id="current-year"></span> - Núcleo Música Nova.
+    <p
+      id="footer-year"
+      style="text-align: center; margin-top: 5; font-size: 0.8em"
+    >
+      &copy; 2024 - <span id="current-year"></span> - Núcleo Música Nova.
     </p>
   </footer>
   <script>

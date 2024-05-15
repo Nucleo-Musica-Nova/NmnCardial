@@ -3,21 +3,58 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 
 h1 {
+  font-family: Popins, serif;
   text-align: center;
   color: white;
 }
 h2 {
+  font-family: Popins, serif;
   text-align: center;
   color: white;
 }
 
-p {
-  /* text-align: justify; */
+h3 {
+  font-family: Popins, serif;
+  text-align: center;
   color: white;
-  font-size: 18px;
+  /* set as bold*/
+  font-weight: bold;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-family: Popins, serif;
   line-height: 1.5; /* altere este valor conforme necessário */
+}
+ul {
+  color: white;
+  font-size: 20px;
+  font-family: Popins, serif;
+  line-height: 1.5; /* altere este valor conforme necessário */
+}
+
+hr {
+  height: 0px;
+  width: 50%;
+  color: rgba(230, 230, 230, 0.1);
+  border: 1px solid rgba(230, 230, 230, 0.1);
 }
 
 footer {
@@ -29,30 +66,23 @@ footer {
 /* Estilo padrão para a classe .container */
 .container {
   width: 100%;
-  top: 60px;
+  top: 30px;
   margin-bottom: 25px;
   left: calc(50% - 100px);
   display: flex;
 }
 
-/* Media query para aplicar as regras apenas quando a largura for menor que a altura */
 @media (max-width: 600px) {
   .container {
-    flex-direction: column; /* Empilhar os cards verticalmente */
+    flex-direction: column;
     margin-top: 20px;
   }
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .card-link:hover .card {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* https://codepen.io/william-goldsworthy/pen/JzVajj */
 .card {
   display: flex;
   height: 280px;
@@ -60,37 +90,35 @@ footer {
   background-color: #17141d;
   border-radius: 10px;
   box-shadow: 0.2rem 0 0.5rem #242424;
-  transition: 1s ease-out;
   position: relative;
   left: 0px;
 }
 
-.card:not(:first-child) {
-  margin-left: -50px;
+@media (max-width: 600px) {
+  .card {
+    margin-bottom: 20px;
+  }
 }
 
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.6s ease-out;
-}
+@media (min-width: 768px) {
+  .card:not(:first-child) {
+    margin-left: -20px;
+  }
+  .card:hover {
+    transform: translateY(-20px);
+    transition: transform 0.6s ease-out;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
 
-.card:hover ~ .card {
-  position: relative;
-  left: 90px;
-  transition: 0.4s ease-out;
-}
-
-/* Animação quando um card é tocado (em dispositivos móveis) */
-.card-touch {
-  transform: translateY(-20px);
-  transition: transform 0.6s ease-out;
-}
-
-/* Animação para os cards adjacentes quando um card é tocado (em dispositivos móveis) */
-.card-touch ~ .card {
-  position: relative;
-  left: 90px;
-  transition: left 0.4s ease-out;
+  .card:hover ~ .card {
+    position: relative;
+    left: 90px;
+    transition: left 0.4s ease-out;
+  }
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
 }
 
 .card-img {
@@ -105,7 +133,7 @@ footer {
 
 .card-title {
   color: white;
-  font-weight: 300;
+  font-weight: bold;
   position: absolute;
   left: 20px;
   top: 15px;
@@ -114,15 +142,42 @@ footer {
 .card-text {
   color: white;
   font-weight: 300;
+  font-size: 16px;
   position: absolute;
   left: 20px;
   top: 55px;
+  margin-right: 50%;
+  line-height: 1.1;
+  display: block;
+}
+
+.card-details {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
   margin-right: 50%;
   line-height: 1;
   display: block;
 }
 
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
+.card-details a {
+  color: inherit; /* Define a cor do texto como a mesma cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.card-details:hover::after {
+  width: 100%; /* Aumenta o comprimento do sublinhado no hover */
+}
+
+.card-details::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px; /* Altura do sublinhado */
+  background-color: white; /* Cor do sublinhado */
+  position: relative;
+  bottom: -3px; /* Posicionamento vertical do sublinhado */
+  transition: width 0.3s ease; /* Adiciona uma transição suave para a mudança de comprimento do sublinhado */
 }
