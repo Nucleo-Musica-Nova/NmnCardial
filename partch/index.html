@@ -5,13 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Cardinal" />
     <meta name="theme-color" content="#111111" />
-    <favicon href="favicon.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"
       user-scalable="no"
     />
-    <title>Partch</title>
+    <title>Cardinal</title>
     <style>
       html {
         background-color: #111111;
@@ -263,7 +262,7 @@
         if (simdSupported) {
           jsModuleName = "CardinalNative.js";
         } else {
-          jsModuleName = "CardinalNative.js";
+          jsModuleName = "CardinalNative-nosimd.js";
         }
         var jsModuleScript = document.createElement("script");
         jsModuleScript.setAttribute("async", true);
