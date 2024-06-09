@@ -162,7 +162,7 @@ footer {
   font-weight: 300;
   position: absolute;
   left: 20px;
-  bottom: 30px;
+  bottom: 60px;
   line-height: 1;
   display: block;
 }
@@ -217,6 +217,45 @@ footer {
 }
 
 .card-details::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px; /* Altura do sublinhado */
+  background-color: white; /* Cor do sublinhado */
+  position: relative;
+  bottom: -3px; /* Posicionamento vertical do sublinhado */
+  transition:
+    width 0.3s ease,
+    height 0.3s ease;
+}
+
+/*
+ *╭─────────────────────────────────────╮
+ *│            Card Download            │
+ *╰─────────────────────────────────────╯
+*/
+
+.card-download {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  line-height: 1;
+  display: block;
+}
+
+.card-download a {
+  color: inherit; /* Define a cor do texto como a mesma cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.card-download:hover::after {
+  width: 100%; /* Aumenta o comprimento do sublinhado no hover */
+  height: 2px; /* Altura do sublinhado */
+}
+
+.card-download::after {
   content: "";
   display: block;
   width: 95%;
