@@ -85,7 +85,7 @@ footer {
 
 .card {
   display: flex;
-  height: 280px;
+  height: 320px;
   width: 100%;
   background-color: #17141d;
   border-radius: 10px;
@@ -94,7 +94,7 @@ footer {
   left: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .card {
     margin-bottom: 20px;
   }
@@ -122,11 +122,12 @@ footer {
 }
 
 .card-img {
-  margin-top: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin-left: 60%;
+  margin-right: 5%;
   max-width: 40%;
   height: auto;
-  margin-bottom: 5px;
   border-radius: 10px;
   display: block; /* Ensure the element behaves like a block-level element */
 }
@@ -146,6 +147,7 @@ footer {
   position: absolute;
   left: 20px;
   top: 55px;
+  bottom: 20px;
   margin-right: 50%;
   line-height: 1.1;
   display: block;
