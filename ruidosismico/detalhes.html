@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Noise</title>
+    <title>Ruído Sísmico</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <h1 align="center" style="margin-bottom: 3%; margin-top: 3%">Noise</h1>
+    <div style="position: relative; margin-top: 3%; margin-bottom: 3%; text-align: center;">
+      <a href="../index.html" style="position: absolute; left: 5%; top: 50%; transform: translateY(-50%); padding: 10px; background-color: #333; border-radius: 10px;">
+        <i class="fas fa-arrow-left" style="color: white;"></i>
+      </a>
+      <h1 style="display: inline-block; margin: 0;">
+        Ruído Sísmico
+      </h1>
+    </div>
     <hr />
     <div
       class="container"
@@ -31,7 +38,7 @@
         style="width: 50%; display: flex; flex-direction: row; margin-left: 25%"
       >
         <img
-          src="../assets/images/partch-fullscreen.png"
+          src="../assets/images/noise-fullscreen.png"
           class="card-img"
           onclick="window.open('./index.html', '_blank')"
           style="
@@ -41,6 +48,7 @@
             margin-top: 0;
             margin-bottom: 0;
             margin-left: 0%;
+            margin-right: 0%;
             max-width: 100%;
             object-fit: cover;
           "
@@ -66,8 +74,8 @@
     <hr />
     <h2>Objetivo</h2>
 
-    <hr />
-    <h2>Descrição</h2>
+    <p>O patch "Ruído Sísmico" foi desenvolvido com o intuito para criar paisagens sonoras imaginárias utilizando ruídos complexos, onde o(a) artista molda o som como se estivesse esculpindo barro. Este patch utiliza módulos nativos do VCV Rack e do fabricante Befaco, especialmente o gerador de ruído Befaco Noise Plethora.
+    </p>
 
     <hr />
     <h2>Demonstração</h2>
@@ -92,10 +100,37 @@
     ></iframe>
 
     <hr />
-    <h2>Interface</h2>
-
-    <hr />
     <h2>Controles de Performance</h2>
+    <h3>Geração de Ruídos</h3>
+    <p>O módulo central do patch é o <strong>BEFACO NOISE PLETHORA</strong>, que possui três vozes geradoras de ruído, embora o patch utilize apenas duas. Cada voz tem parâmetros divididos em dois blocos:</p>
+    <ul>
+        <li><strong>Seleção de Ruído:</strong> Seletor de Algoritmos de Ruído e Controles X e Y.</li>
+        <li><strong>Filtro:</strong> Seleção de Filtro (LP, BP, HP), Frequência de Corte e Ressonância.</li>
+    </ul>
+
+    <h3>Controle do Gerador de Ruído</h3>
+    <p>Os módulos de controle garantem a interação dinâmica com o NOISE PLETHORA:</p>
+    <ul>
+        <li><strong>MUTE:</strong> Liga e desliga o fluxo de cada voz.</li>
+        <li><strong>SCOPE:</strong> Visualiza e antecipa a forma de onda gerada.</li>
+        <li><strong>MOTION MTR:</strong> Controla parâmetros do NOISE PLETHORA, como a mudança de programa de ruído e os parâmetros X e Y dos algoritmos.</li>
+    </ul>
+
+    <h3>Interface Gestual</h3>
+    <p>Esta seção permite ao(à) artista disparar e gerenciar os sons gerados, consistindo dos seguintes módulos:</p>
+    <ul>
+        <li><strong>RAMPAGE:</strong> Gerador de envelope de duas vozes.</li>
+        <li><strong>RANDOM:</strong> Gerador randômico de disparos (gatilhos, triggers).</li>
+        <li><strong>VCA MIX:</strong> Mixer e VCA com controle por tensão.</li>
+        <li><strong>SPRING REVERB:</strong> Aplicador de reverberação.</li>
+        <li><strong>AUDIO:</strong> Conecta o VCV Rack à interface de som do computador.</li>
+    </ul>
+    <hr>
+    <h2>Artigo</h2>
+    <p>Para mais detalhes sugerimos a leitura do capítulo: <i>Três patches em VCV Rack para criação musical: a experiência com o sintetizador modular na aprendizagem e descoberta sonora.</i>
+    </p>
+    <!-- coloque um título em itálico com o texto 'Em Breve' no centro h4 -->
+    <h3 style="text-align: center; font-style: italic;">Em Breve...</h3>  
   </body>
   <footer>
     <br />

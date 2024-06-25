@@ -20,7 +20,15 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <h1 align="center" style="margin-bottom: 3%; margin-top: 3%">Pernilongo</h1>
+    <div style="position: relative; margin-top: 3%; margin-bottom: 3%; text-align: center;">
+      <a href="../index.html" style="position: absolute; left: 5%; top: 50%; transform: translateY(-50%); padding: 10px; background-color: #333; border-radius: 10px;">
+        <i class="fas fa-arrow-left" style="color: white;"></i>
+      </a>
+      <h1 style="display: inline-block; margin: 0;">
+        Pernilongo
+      </h1>
+    </div>
+        
     <hr />
     <div
       class="container"
@@ -31,7 +39,7 @@
         style="width: 50%; display: flex; flex-direction: row; margin-left: 25%"
       >
         <img
-          src="../assets/images/partch-fullscreen.png"
+          src="../assets/images/pernilongo-fullscreen.png"
           class="card-img"
           onclick="window.open('./index.html', '_blank')"
           style="
@@ -41,6 +49,7 @@
             margin-top: 0;
             margin-bottom: 0;
             margin-left: 0%;
+            margin-right: 0%;
             max-width: 100%;
             object-fit: cover;
           "
@@ -65,10 +74,9 @@
 
     <hr />
     <h2>Objetivo</h2>
-
-    <hr />
-    <h2>Descrição</h2>
-
+    <p>O objetivo do patch Pernilongo é criar uma sonoridade com movimento espacial circular, evocando o som característico de um pernilongo. Este patch utiliza a recursividade dos sinais como uma técnica central, o que permite criar controles sensíveis e complexos que alteram significativamente o comportamento do fluxo de sinais e, consequentemente, o caráter das sonoridades. Essa abordagem é especialmente útil em performances ao vivo, onde poucos controles podem produzir grandes variações sonoras.
+    </p>
+    
     <hr />
     <h2>Demonstração</h2>
     <iframe
@@ -82,7 +90,7 @@
       "
       width="660"
       height="415"
-      src="https://www.youtube.com/embed/uI4VdLz4QOE?si=kTkbCMI3E5RPcc79&vq=hd1080&showinfo=0"
+      src="https://www.youtube.com/embed/9eFL1QBUOiA?si=p9fBrmTrbgQEb9mq&vq=hd1080&showinfo=0"
       title="YouTube video player"
       frameborder="0"
       sandbox="allow-same-origin allow-scripts allow-popups"
@@ -90,12 +98,22 @@
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
-
     <hr />
     <h2>Interface</h2>
-
+    <p>
+      A interface de Pernilongo pode ser dividida em três partes:
+      <ul>
+        <li>Parte A: Três VCOs e um LFO geram frequências e modulações recursivas, criando efeitos de phasing e envelopes de amplitude.</li>
+        <li>Parte B: Um LFO e um VCF modulam pulsos e filtragem, alterando o envelope e a ressonância dos sons.</li>
+        <li>Parte C: Dois LFOs e três VCFs criam movimento estéreo, dividindo o espectro sonoro entre os canais esquerdo e direito.</li>
+      </ul>
+</p>
     <hr />
-    <h2>Controles de Performance</h2>
+    <h2>Artigo</h2>
+    <p>Para mais detalhes sugerimos a leitura do capítulo: <i>Três patches em VCV Rack para criação musical: a experiência com o sintetizador modular na aprendizagem e descoberta sonora.</i>
+    </p>
+    <!-- coloque um título em itálico com o texto 'Em Breve' no centro h4 -->
+    <h3 style="text-align: center; font-style: italic;">Em Breve...</h3>    
   </body>
   <footer>
     <br />

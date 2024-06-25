@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Patches NMN</title>
+    <title>Synthia</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,76 +21,10 @@
   </head>
   <body>
     <h1 align="center" style="margin-bottom: 3%; margin-top: 3%">
-      Patches | Ebook Arte Sonora
+      Synthia
     </h1>
 
     <div class="container">
-      <div class="card">
-        <div>
-          <h3 class="card-title">Pernilongo</h3>
-          <p class="card-text">
-            Pernilongo parte de uma abordagem da síntese sonora que explora a
-            ordenação de fluxos de sinal como o próprio espaço criativo.
-          </p>
-        </div>
-        <img
-          src="./assets/images/pernilongo.png"
-          class="card-img"
-          onclick="window.open('./noise', '_blank')"
-          style="cursor: pointer"
-        />
-        <h4 class="card-execute" style="text-align: center">
-          <a href="pernilongo/">
-            <i class="fa-solid fa-play fa-sm"></i> Execute</a
-          >
-        </h4>
-        <h4 class="card-download" style="text-align: center">
-          <a href="pernilongo/pernilongo.vcv">
-            <i class="fa-solid fa-circle-down fa-sm"></i>
-            Download</a
-          >
-        </h4>
-        <h4 class="card-details" style="text-align: center">
-          <a href="pernilongo/detalhes.html">
-            <i class="fa-solid fa-circle-info fa-sm"></i> Veja Detalhes</a
-          >
-        </h4>
-      </div>
-
-      <div class="card">
-        <div>
-          <h3 class="card-title">Ruídos Sísmicos</h3>
-          <p class="card-text">
-            Nesse patch sugerimos o trabalho com alteração texturas graduais e
-            lentas.
-          </p>
-        </div>
-        <img
-          src="./assets/images/noise.png"
-          class="card-img"
-          onclick="window.open('./noise', '_blank')"
-          style="cursor: pointer"
-        />
-        <h4 class="card-execute" style="text-align: center">
-          <a href="ruidos/">
-            <i class="fa-solid fa-play fa-sm"> </i>
-            Execute</a
-          >
-        </h4>
-        <h4 class="card-download" style="text-align: center">
-          <a href="ruidos/ruido-sismicos.vcv">
-            <i class="fa-solid fa-circle-down fa-sm"></i>
-            Download</a
-          >
-        </h4>
-        <h4 class="card-details" style="text-align: center">
-          <a href="noise/detalhes.html">
-            <i class="fa-solid fa-circle-info fa-sm"></i>
-            Veja Detalhes</a
-          >
-        </h4>
-      </div>
-
       <div class="card">
         <div style="display: flex; flex-direction: column">
           <h3 class="card-title">Pa[r]tch</h3>
@@ -108,7 +42,7 @@
         <h4 class="card-execute" style="text-align: center">
           <a href="partch/">
             <i class="fa-solid fa-play fa-sm"></i>
-            Execute</a
+            Patch Online</a
           >
         </h4>
         <h4 class="card-download" style="text-align: center">
@@ -124,6 +58,72 @@
           >
         </h4>
       </div>
+
+      <div class="card">
+        <div>
+          <h3 class="card-title">Ruído Sísmico</h3>
+          <p class="card-text">
+            Nesse patch sugerimos o trabalho com alteração texturas graduais e
+            lentas.
+          </p>
+        </div>
+        <img
+          src="./assets/images/noise.png"
+          class="card-img"
+          onclick="window.open('./noise', '_blank')"
+          style="cursor: pointer"
+        />
+        <h4 class="card-execute" style="text-align: center">
+          <a href="ruidosismico/">
+            <i class="fa-solid fa-play fa-sm"> </i>
+            Patch Online</a
+          >
+        </h4>
+        <h4 class="card-download" style="text-align: center">
+          <a href="ruidosismico/ruido-sismicos.vcv">
+            <i class="fa-solid fa-circle-down fa-sm"></i>
+            Download</a
+          >
+        </h4>
+        <h4 class="card-details" style="text-align: center">
+          <a href="ruidosismico/detalhes.html">
+            <i class="fa-solid fa-circle-info fa-sm"></i>
+            Veja Detalhes</a
+          >
+        </h4>
+      </div>
+
+     
+      <div class="card">
+        <div>
+          <h3 class="card-title">Pernilongo</h3>
+          <p class="card-text">
+            Pernilongo explora a ordenação de fluxos de sinal como o próprio espaço criativo.
+          </p>
+        </div>
+        <img
+          src="./assets/images/pernilongo.png"
+          class="card-img"
+          onclick="window.open('./noise', '_blank')"
+          style="cursor: pointer"
+        />
+        <h4 class="card-execute" style="text-align: center">
+          <a href="pernilongo/">
+            <i class="fa-solid fa-play fa-sm"></i> Patch Online</a
+          >
+        </h4>
+        <h4 class="card-download" style="text-align: center">
+          <a href="pernilongo/pernilongo.vcv">
+            <i class="fa-solid fa-circle-down fa-sm"></i>
+            Download</a
+          >
+        </h4>
+        <h4 class="card-details" style="text-align: center">
+          <a href="pernilongo/detalhes.html">
+            <i class="fa-solid fa-circle-info fa-sm"></i> Veja Detalhes</a
+          >
+        </h4>
+      </div>
     </div>
     <hr />
 
@@ -135,17 +135,10 @@
         modulares. Oferecemos algumas ideias composicionais prontas, de modo a
         fornecer uma experência de aprendizado prática.
       </p>
-      <p>
-        VCV Rack (Cardinal) é uma emulação de sintetizadores modulares, que
-        funciona como na vida real, onde patches são feitos adicionando módulos
-        e conectando-os com <i>patch cords</i> (cordinhas/fiozinhos). É gratuito
-        e de código aberto, permitindo que as pessoas desenvolvam novos módulos.
-        Para executar os patches em Browsers utilizamos o Cardinal, uma cópia
-        modificada no VCV Rack (desenvolvido, entre outros, por Filipe Coelho).
-      </p>
+
     </div>
   </body>
-  <footer>
+  <footer style="margin-bottom: 0px">
     <br />
     <img
       src="./partch/NucleoMusicaNova_preto.png"
